@@ -1,0 +1,52 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "sourceMap": true,
+        "module": "CommonJS",
+        "target": "ES5",
+        "strict": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "paths": {
+            "@/*": [
+                "*"
+            ],
+            "@/interface": [
+                "interfaces/index.ts"
+            ],
+            "@/controller": [
+                "controller/index.ts"
+            ],
+            "@/models": [
+                "models/index.ts"
+            ],
+            "@/database": [
+                "database/index.ts"
+            ],
+            "@/utils": [
+                "utils/index.ts"
+            ],
+            "@/services": [
+                "services/index.ts"
+            ],
+            "@/middlewares": [
+                "middlewares/index.ts"
+            ],
+            "@/routes": [
+                "routes/index.ts"
+            ],
+        }
+    },
+    "include": [
+        "src/**/*.*.ts",
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.json",
+        ".env"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts",
+        "src/http",
+    ]
+}
